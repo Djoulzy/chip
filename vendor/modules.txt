@@ -1,0 +1,3 @@
+# github.com/Djoulzy/mmu v0.0.0-20221015154434-3927fedd1199 => ../mmu
+## explicit; go 1.20
+github.com/Djoulzy/mmu
