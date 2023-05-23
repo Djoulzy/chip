@@ -9,12 +9,13 @@ type ROM struct {
 	Under *Basic
 }
 
-func NewROM(name string, size int) *ROM {
+func NewROM(name string, size int, file string) *ROM {
 	var tmp ROM
 
 	tmp.Name = name
 	tmp.Buff = make([]byte, size)
 	tmp.Under = nil
+	tmp.LoadData(file, 0)
 
 	// fmt.Printf("Create new ROM %4s with size %d\n", name, size)
 	return &tmp
